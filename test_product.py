@@ -2,10 +2,10 @@ from product import product_info
 
 def test_product_info():
     expected_output = (
-        "Product Name: Headphones\n"
-        "Product ID: p101\n"
-        "Quantity: 3\n"
-        "Product Price: 699"
+        "Product ID: P102\n"
+        "Name: Keyboard\n"
+        "Quantity: 5\n"
+        "Price: 799.5"
     )
-    result = product_info("Headphones", "p101", 5, 699)
+    result = product_info("P102", "Keyboard", 5, 799.5)
     assert result == expected_output
