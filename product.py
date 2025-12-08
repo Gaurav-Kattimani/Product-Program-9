@@ -1,16 +1,16 @@
-def product_info(name, id, quantity, price):
+def product_info(product_id, name, quantity, price):
     return (
-        f"Product Name: {name}\n"
-        f"Product ID: {id}\n"
+        f"Product ID: {product_id}\n"
+        f"Name: {name}\n"
         f"Quantity: {quantity}\n"
-        f"Product Price: {price}"
+        f"Price: {price}"
     )
 
 if __name__ == "__main__":
-    name = "Headphones"
-    id = "p101"
-    quantity = 3
-    price = 699
+    product_id = "P102"
+    name = "Keyboard"
+    quantity = 5
+    price = 799.50
 
     print("Product Details:\n")
-    print(product_info(name, id, quantity, price))
+    print(product_info(product_id, name, quantity, price))
